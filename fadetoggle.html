@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+
+$(document).ready(function(){
+    $("#b1").click(function(){
+        $("#div1").fadeToggle(1000);
+        $("#div2").fadeToggle('slow');
+        $("#div3").fadeToggle(3000);
+    });
+});
+    </script>
+</head>
+<body>
+    <p>See the fadeIn() method example with different parameters.</p>
+    <button id="b1">Click to fade in boxes</button><br><br>
+    <div id="div1" style="display:none">first division</div><br>
+    <div id="div2" style="display:none;">second divison</div><br>
+    <div id="div3" style="display:none;">third divison</div>
+</body>
+</html>
