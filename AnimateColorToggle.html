@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+    <button id="b1">first</button>
+    <button id="b2">second</button>
+    <button id="b3">third</button>
+    <button id="b4">four</button>
+    <button id="b5">five</button>
+    <button id="b6">six</button>
+    <button id="b7">sevens</button>
+    <div id="div1" title="first" style="width:800px;height:800px;background:black;position:absolute">
+        <div id="div2" title="second" style="width:700px;height:700px;background:white;position:absolute">
+            <div id="div3" title="third" style="width:600px;height:600px;background:red;position:absolute">
+                <div id="div4" title="four" style="width:500px;height:500px;background:yellow;position:absolute">
+                    <div id="div5" title="five" style="width:400px;height:400px;background:orange;position:absolute">
+                        <div id="div6" title="six" style="width:300px;height:300px;background:pink;position:absolute">
+                            <div id="div7" title="seventh" style="width:200px;height:200px;background:blue;position:absolute">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $('#b1').click(function () {
+            $('#div1').animate({ height: 'toggle' });
+        });
+        $('#b2').click(function () {
+            $('#div2').animate({ height: 'toggle' });
+        });
+        $('#b3').click(function () {
+            $('#div3').animate({ height: 'toggle' });
+        });
+        $('#b4').click(function () {
+            $('#div4').animate({ height: 'toggle' });
+        });
+        $('#b5').click(function () {
+            $('#div5').animate({ height: 'toggle' });
+        });
+        $('#b6').click(function () {
+            $('#div6').animate({ height: 'toggle' });
+        });
+        $('#b7').click(function () {
+            $('#div7').animate({ height: 'toggle' });
+        });
+    });
+</script>

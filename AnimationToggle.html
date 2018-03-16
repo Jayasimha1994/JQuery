@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+    <button id="b1">first</button>
+    <button id="b2">second</button>
+    <div id="div1" title="first" style="width:100px;height:100px;background:red;position:absolute">hello</div>
+    <div id="div2" title="first" style="width:100px;height:100px;background:red;position:absolute">hello</div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $('#b1').click(function () {
+            $('#div1').animate({ left: '250px',height:'400px',width:'400px'}).css('background-color','green').fadeToggle();
+        });
+        $('#b2').click(function () {
+            $('#div2').animate({ right: '250px',bottom:'100px', height: '400px', width: '400px' }).css('background-color', 'green').fadeToggle();
+        });
+    });
+</script>

@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body style="background:white">
+    <button id="b1" style="background-color:greenyellow;width:100px;height:50px">SlideToggle</button>
+    <svg width="800" height="600">
+        <rect width="500" height="400" style="fill:yellow;stroke-width:3;stroke:rgb(0,0,0)" />
+    </svg>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        //$('#b1').click(function () {
+        //    $('svg').animate({ height: 'toggle' }).slideToggle('slow');
+        //});
+        $('#b1').click(function () {
+            $('svg').toggle();
+        });
+    });
+</script>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Custom Selector</title>
+    <style type="text/css">
+        * {
+            padding: 5px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+    $("tr:odd").css("background", "yellow");
+    $("tr:even").css("background", "orange");
+    $("p:first").css("background", "red");
+    $("p:last").css("background", "green");
+    $("form :text").css("background", "purple");
+    $("form :password").css("background", "purple");
+    $("form :submit").css("background", "violet");
+});
+    </script>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Carter</td>
+                <td>johncarter@mail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Peter Parker</td>
+                <td>peterparker@mail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>John Rambo</td>
+                <td>johnrambo@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p>This is one more paragraph.</p>
+    <form>
+        <label>Name: <input type="text"></label>
+        <label>Password: <input type="password"></label>
+        <input type="submit" value="Sign In">
+    </form>
+</body>
+</html>
